@@ -228,7 +228,7 @@ nav {
     #wrapper footer p {
       color: #fff; }
 
-@media screen and (max-width: 1376px) {
+@media screen and (max-width: 1366px) {
   #wrapper header {
     height: 768px; }
     #wrapper header #head-text h1 {
@@ -260,7 +260,9 @@ nav {
     font-size: 20px; }
   #wrapper #block #block1 {
     width: 56%;
-    margin-left: 22%; } }
+    margin-left: 22%; }
+  #wrapper #block #block2 {
+    width: 45%; } }
 
 @media screen and (max-width: 1280px) {
   #wrapper header {
@@ -277,6 +279,9 @@ nav {
       font-size: 47px; }
   #wrapper .zipCode {
     margin-top: -18%; }
+  #wrapper #block div p {
+    font-size: 20px;
+    line-height: 26px; }
   #wrapper #content .dap {
     margin-left: 9%;
     width: 400px; }
@@ -293,5 +298,25 @@ nav {
     display: none; }
   #wrapper #content {
     height: 450px; }
+    #wrapper #content .dap {
+      margin-left: 20% !important; }
     #wrapper #content div {
-      display: block; } }
+      display: block; }
+  #wrapper #block div h1 {
+    font-size: 48px; }
+  #wrapper #block div p {
+    font-size: 20px;
+    line-height: 24px; }
+  #wrapper #block #block1 {
+    width: 63%;
+    margin-left: 22%; }
+  #wrapper #block #block2 {
+    top: 880px;
+    width: 55%;
+    left: 36%; }
+  #wrapper #contact div {
+    width: 700px;
+    height: 700px;
+    border-radius: 700px; }
+    #wrapper #contact div form {
+      left: 125px; } }
