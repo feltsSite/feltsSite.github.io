@@ -155,7 +155,7 @@ nav {
     height: 2200px;
     background: url("../images/bgb.jpg") no-repeat;
     background-size: cover;
-    /*background-position: 50% 0; }*/
+    /*background-position: 50% 0;*/ }
     #wrapper #block h1 {
       color: #fff;
       font-size: 56px; }
