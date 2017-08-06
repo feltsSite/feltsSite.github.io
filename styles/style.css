@@ -58,7 +58,7 @@ nav {
     height: 1153px;
     background: url("../images/bg.jpg") no-repeat;
     background-size: cover;
-    background-position: 50% 0; }
+    /*background-position: 50% 0;*/ }
     #wrapper header::before {
       background: linear-gradient(to top, #000, transparent); }
     #wrapper header::before {
@@ -155,7 +155,7 @@ nav {
     height: 2200px;
     background: url("../images/bgb.jpg") no-repeat;
     background-size: cover;
-    background-position: 50% 0; }
+    /*background-position: 50% 0; }*/
     #wrapper #block h1 {
       color: #fff;
       font-size: 56px; }
