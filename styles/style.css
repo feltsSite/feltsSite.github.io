@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 * {
-	padding: 0 !important;
+	padding: 0;
 }
 
 html, body {
+	width: 100%;
 	background-color: #e3e4e6 !important;
+	overflow-x: hidden;
 }
 
 a {
@@ -74,19 +76,19 @@ a:hover {
 	left: 0;
 	top: 0;
 	z-index: 1;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	visibility: visible;
 	overflow: hidden;
 	background: url('../images/2.jpg') no-repeat;
-	background-position: 50% 30%;
+	background-position: 50% 50%;
 }
 
 .wrapper {
 	z-index: 2;
 	position: relative;
 	height: 210vh;
-	padding: 0 !important;
+	padding: 0;
 	margin-top: 200px;
 	margin-bottom: 270px;
 	background-color: rgba(0,0,0,0.25);
@@ -242,9 +244,9 @@ a:hover {
 	color: #eee;
 }
 
-header > h1 {
+header > h1.col-lg-5.col-md-5.col-sm-5.col-xs-7 {
 	position: absolute;
-	right: 10%;
+	right: 10px;
 	top: -15vh;
 	font-size: 96px;
 	font-family: "Indie Flower", cursive;
@@ -292,13 +294,21 @@ header > a {
 	position: absolute;
 	width: 200px;
 	height: 40px;
-	margin: 50px 0;
+	margin: 0 0;
 	text-align: center;
 	line-height: 260%;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 16px;
 	background-color: #fb9f4a;
+}
+
+#footImg {
+	position: relative;
+	top: 0;
+	right: 145%;
+	width: 245%;
+	z-index: 1;
 }
 
 footer {
@@ -308,18 +318,47 @@ footer {
 	width: 100%;
 }
 
-#footImg {
-	position: absolute;
-	top: -158vh;
-	right: 0;
-	width: 145%;
-	z-index: 1;
-}
-
 footer > div{
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 70px;
 	background-color: #000;
+}
+
+@media screen and (max-width: 576px) {
+
+	div.container.wrapper {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0;
+		box-shadow: none;
+	}
+
+	.navi > ul {
+		top: 100px;
+	}
+
+	header > h1.col-lg-5.col-md-5.col-sm-5.col-xs-7 {
+		font-size: 42px;
+		top: 7px;
+		right: 10px;
+	}
+
+	header > h2 {
+		margin-top: 50vh;
+		font-size: 18px;
+		letter-spacing: 5px
+	}
+
+	header > p {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	header > a {
+		top: 5vh;
+	}
 }
