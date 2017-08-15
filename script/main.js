@@ -7,9 +7,9 @@ $(function() {
 			$('.sandwich').addClass('active');
 			mMnu = false;
 		} else {
-			$('.navi').fadeOut(300);;
+			$('.navi').fadeOut(300);
 			$('.sandwich').removeClass('active');
-			$('.sw-stick').delay(1000).css("width", "25px")
+			$('.sw-stick').css("width", "25px");
 			mMnu = true;
 		}
 	});
