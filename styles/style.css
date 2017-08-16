@@ -250,6 +250,11 @@ a:hover {
 	color: #eee;
 }
 
+header {
+	position: absolute;
+	width: 100%;
+}
+
 header > h1.logo{
 	position: absolute;
 	right: 20px;
@@ -265,6 +270,7 @@ header > h1 > a > span {
 
 header > h2 {
 	position: relative;
+	display: block;
 	text-align: center;
 	width: 100%;
 	height: 34px;
@@ -293,21 +299,24 @@ header > p > span {
 
 .btnn {
 	position: relative;
+	display: block;
 	margin: 0 0;
+	width: 200px;
+	height: 40px;
 	top: 200px;
+	background-color: #fb9f4a;
 	left: calc(50% - 100px);
 }
 
 header > .btnn > a {
 	position: absolute;
-	width: 200px;
-	height: 40px;
-	text-align: center;
+	width: 100%;
+	height: 100%;
 	line-height: 260%;
+	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 16px;
-	background-color: #fb9f4a;
 }
 
 #footImg {
@@ -375,7 +384,7 @@ footer > div{
 		font-size: 22px;
 	}
 
-	header > a {
+	header > .btnn {
 		top: 40px;
 	}
 
@@ -407,7 +416,7 @@ footer > div{
 		font-size: 16px;
 	}
 
-	header > a {
+	header > .btnn {
 		top: 20px;
 	}
 
