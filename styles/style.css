@@ -86,6 +86,14 @@ a:hover {
 .wrapper {
 	position: relative;
 	width: 100%;
+	min-height: 100vh;
+	height: auto;
+}
+
+div#hd {
+	position: relative;
+	width: 100%;
+	height: 100vh;
 }
 
 .wrapper > .container {
@@ -94,9 +102,9 @@ a:hover {
 	padding: 0;
 	left: 0;
 	right: 0;
-	height: 210vh;
-	margin-top: 200px;
-	margin-bottom: 270px;
+	height: 310vh;
+	top: 200px;
+	bottom: 270px;
 	background-color: rgba(0,0,0,0.25);
 	box-shadow: 0px 0px 10px 5px #000;
 }
@@ -253,12 +261,13 @@ a:hover {
 header {
 	position: absolute;
 	width: 100%;
+	height: calc(100vh - 200px);
 }
 
 header > h1.logo{
 	position: absolute;
 	right: 20px;
-	top: -20vh;
+	top: -195px;
 	font-size: 96px;
 	font-family: "Indie Flower", cursive;
 	text-align: right;
@@ -303,7 +312,7 @@ header > p > span {
 	margin: 0 0;
 	width: 200px;
 	height: 40px;
-	top: 200px;
+	top: 170px;
 	background-color: #fb9f4a;
 	left: calc(50% - 100px);
 }
@@ -319,9 +328,37 @@ header > .btnn > a {
 	font-size: 16px;
 }
 
+div#about {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #444;
+}
+
+div.about {
+	position: absolute;
+	top: calc(100vh - 200px);
+	width: 100%;
+	height: 100vh;
+}
+
+div.about > h1 {
+	position: relative;
+	text-align:center;
+	margin: 200px 0 40px 0;
+	color: #e2e2e2;
+}
+
+div.about > hr {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+}
+
 #footImg {
 	position: relative;
-	top: 100vh;
+	top: 0;
 	width: 100%;
 	height: 151vh;
 	background: url("../images/3.jpg") no-repeat;
@@ -335,15 +372,26 @@ header > .btnn > a {
 footer {
 	position: relative;
 	z-index: 1;
-	top: 100vh;
+	bottom: 0;
 	width: 100%;
+	height: 70px;
 }
 
 footer > div{
 	position: absolute;
 	width: 100%;
-	height: 70px;
-	background-color: #000;
+	height: 100%;
+	padding: 24px 0;
+	background-color: #222;
+}
+
+footer > div > p {
+	position: absolute;
+	width: 100%;
+	height: 14px;
+	text-align: center;
+	color: #eee;
+	font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -386,6 +434,10 @@ footer > div{
 
 	header > .btnn {
 		top: 40px;
+	}
+
+	div.about {
+		top: 100vh;
 	}
 
 	#footImg {
