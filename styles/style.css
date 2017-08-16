@@ -291,18 +291,17 @@ header > p > span {
 	width: 300px;
 }
 
-header > a {
+.btnn {
 	position: relative;
-	width: 200px;
-	top: 20vh;
+	margin: 0 0;
+	top: 200px;
 	left: calc(50% - 100px);
 }
 
-.btnn {
+header > .btnn > a {
 	position: absolute;
 	width: 200px;
 	height: 40px;
-	margin: 0 0;
 	text-align: center;
 	line-height: 260%;
 	text-transform: uppercase;
