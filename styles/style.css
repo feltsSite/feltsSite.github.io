@@ -77,9 +77,11 @@ a:hover {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	width: 100%;
+	height: 100vh;
 	overflow-x: hidden;
 	background: url('../images/2.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 	background-position: 50% 50%;
 }
 
@@ -102,11 +104,11 @@ div#hd {
 	padding: 0;
 	left: 0;
 	right: 0;
-	height: 310vh;
+	height: 410vh;
 	top: 200px;
 	bottom: 270px;
 	background-color: rgba(0,0,0,0.25);
-	box-shadow: 0px 0px 10px 5px #000;
+	box-shadow: 0px 0px 5px 2px #000;
 }
 
 .toggle_mnu {
@@ -208,7 +210,6 @@ div#hd {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0,0,0,.9);
-	border-bottom: 2px solid #fb9f4a;
 }
 
 .navi > ul {
@@ -243,6 +244,7 @@ div#hd {
 	font-size: 14px;
 	height: 100%;
 	transition: all .6s;
+	cursor: pointer;
 }
 
 .navi > ul > li > a:hover {
@@ -312,7 +314,7 @@ header > p > span {
 	margin: 0 0;
 	width: 200px;
 	height: 40px;
-	top: 170px;
+	top: 30px;
 	background-color: #fb9f4a;
 	left: calc(50% - 100px);
 }
@@ -323,8 +325,9 @@ header > .btnn > a {
 	height: 100%;
 	line-height: 260%;
 	text-align: center;
+	cursor: pointer;
 	text-transform: uppercase;
-	color: #fff;
+	color: #eee;
 	font-size: 16px;
 }
 
@@ -346,17 +349,116 @@ div.about {
 div.about > h1 {
 	position: relative;
 	text-align:center;
-	margin: 200px 0 40px 0;
+	margin: 10% 0 40px 0;
 	color: #e2e2e2;
 }
 
 div.about > hr {
 	position: relative;
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
+	border-top: 1px solid #fb9f4a;
 }
 
-#footImg {
+div.about > div.leftDiv {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	height: 60%;
+	background-color: #555;
+	margin: 50px 5%;
+	margin-left: calc(15% - 4.5px);
+}
+
+div.about > div.rightDiv {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	height: 60%;
+	background-color: #555;
+	margin: 50px 5%;
+	margin-right: calc(15% - 4.5px);
+}
+
+div.about > hr.vHr {
+	position: relative;
+	display: inline-block;
+	border: none;
+	border-left: 1px solid #fb9f4a;
+	width: 0;
+	height: 60%;
+	margin: 50px auto;
+}
+
+.portfolio {
+	position: absolute;
+	top: calc(200vh - 200px);
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+}
+
+.portfolio > h1 {
+	text-align: center;
+	margin-top: 10%;
+	font-weight: bold;
+	color: #58595a;
+}
+
+.tz-gallery {
+	position: relative;
+	padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    transition: 0.15s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+#myPortfolio {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150vh;
+	background-color: #ddd;
+}
+
+#myContacts {
 	position: relative;
 	top: 0;
 	width: 100%;
@@ -440,7 +542,15 @@ footer > div > p {
 		top: 100vh;
 	}
 
-	#footImg {
+	div.portfolio {
+		top: 200vh;
+	}
+
+	#myPortfolio {
+		height: 500vh;
+	}
+
+	#myContacts {
 		height: 100vh;
 	}
 }
@@ -470,6 +580,10 @@ footer > div > p {
 
 	header > .btnn {
 		top: 20px;
+	}
+
+	#myPortfolio {
+		height: 400vh;
 	}
 
 }

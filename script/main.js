@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+	$('.preloader').delay(1000).fadeOut('slow');;
+});
+
 $(function() {
 		var mMnu = true;
 	$('button.toggle_mnu').click(function() {
@@ -13,8 +17,35 @@ $(function() {
 			mMnu = true;
 		}
 	});
+
+	$("#aboutMe,.btnn").click(function() {
+		$("body,html").animate({"scrollTop" : $("#about").offset().top}, 1000);
+		$('.navi').fadeOut(100);
+		$('.sandwich').removeClass('active');
+		$('.sw-stick').css("width", "25px")
+		mMnu = true;
+	});
+
+	$("#portfolio").click(function() {
+		$("body,html").animate({"scrollTop" : $("#myPortfolio").offset().top}, 1000);
+		$('.navi').fadeOut(100);
+		$('.sandwich').removeClass('active');
+		$('.sw-stick').css("width", "25px")
+		mMnu = true;
+	});
+
+	$("#contacts").click(function() {
+		$("body,html").animate({"scrollTop" : $("#myContacts").offset().top}, 1000);
+		$('.navi').fadeOut(100);
+		$('.sandwich').removeClass('active');
+		$('.sw-stick').css("width", "25px")
+		mMnu = true;
+	});
+
 });
 
-$(window).on('load', function() {
-	$('.preloader').delay(1000).fadeOut('slow');;
+baguetteBox.run('.tz-gallery', {
+	animation: 'fadeIn',
+	noScrollbars: true
 });
+

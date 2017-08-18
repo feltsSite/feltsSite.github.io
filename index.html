@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Сайт-портфолио верстальщика</title>
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/baguetteBox.min.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="styles/style.css">
 </head>
@@ -22,22 +23,98 @@
 				</button>
 				<div class="navi">
 					<ul class="col-lg-6 col-md-8 col-sm-9">
-						<li><a href="">Обо мне</a></li>
-						<li><a href="">Портфолио</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a id="aboutMe">Обо мне</a></li>
+						<li><a id="portfolio">Портфолио</a></li>
+						<li><a id="contacts">Контакты</a></li>
 					</ul>
 				</div>
 				<h1 class="logo col-lg-5 col-md-6 col-sm-7 col-xs-7"><a href="index.html"><span>Felts</span> Idris</a></h1>
 					<h2>Сайт - портфолио</h2>
 					<p><span>Javascript / HTML / CSS </span></p>
-					<span class="btnn"><a  href="">Подробности</a></span>
+					<span class="btnn"><a>Подробности</a></span>
 			</header>
 			<div class="about">
 				<h1>Обо мне</h1><hr>
+				<div class="leftDiv"></div> <hr class="vHr">
+				<div class="rightDiv"></div>
+			</div>
+			<div class="portfolio">
+				<h1>Портфолио</h1>
+				<div class="tz-gallery">
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="images/park.jpg">
+									<img src="images/park.jpg" alt="Park">
+								</a>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="images/bridge.jpg">
+									<img src="images/bridge.jpg" alt="Bridge">
+								</a>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="images/tunnel.jpg">
+									<img src="images/tunnel.jpg" alt="Tunnel">
+								</a>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="images/coast.jpg">
+									<img src="images/coast.jpg" alt="Coast">
+								</a>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="images/rails.jpg">
+									<img src="images/rails.jpg" alt="Rails">
+								</a>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="images/traffic.jpg">
+									<img src="images/traffic.jpg" alt="Traffic">
+								</a>
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="about"></div>
-		<div id="footImg">
+		<div id="myPortfolio"></div>
+		<div id="myContacts">
 			<!-- <p>	&#8220Give a man a program,</p>
 			<p>		frustrate him for a day.</p>
 			<p>		Teach a man to program,</p>
@@ -51,6 +128,7 @@
 		</footer>
 	</div>
 	<script src="script/jquery-3.1.1.min.js"></script>
+	<script src="script/baguetteBox.min.js"></script>
 	<script src="script/main.js"></script>
 </body>
 </html>
