@@ -1,5 +1,12 @@
 $(window).on('load', function() {
+	let pHeight = $(".portfolio").height();
+	$("#myPortfolio").css("height", pHeight + 100 + "px");
 	$('.preloader').delay(1000).fadeOut('slow');;
+});
+
+$(window).on('resize', function() {
+	let pHeight = $(".portfolio").height();
+	$("#myPortfolio").css("height", pHeight + 100 + "px");
 });
 
 $(function() {
@@ -45,7 +52,6 @@ $(function() {
 });
 
 baguetteBox.run('.tz-gallery', {
-	animation: 'fadeIn',
-	noScrollbars: true
+	animation: 'fadeIn'
 });
 

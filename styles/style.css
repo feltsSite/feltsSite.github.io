@@ -104,7 +104,7 @@ div#hd {
 	padding: 0;
 	left: 0;
 	right: 0;
-	height: 410vh;
+	height: 440vh;
 	top: 200px;
 	bottom: 270px;
 	background-color: rgba(0,0,0,0.25);
@@ -390,6 +390,14 @@ div.about > hr.vHr {
 	margin: 50px auto;
 }
 
+#myPortfolio {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ddd;
+}
+
 .portfolio {
 	position: absolute;
 	top: calc(200vh - 200px);
@@ -447,15 +455,6 @@ div.about > hr.vHr {
 
 .baguetteBox-button {
     background-color: transparent !important;
-}
-
-#myPortfolio {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 150vh;
-	background-color: #ddd;
 }
 
 #myContacts {
@@ -546,10 +545,6 @@ footer > div > p {
 		top: 200vh;
 	}
 
-	#myPortfolio {
-		height: 500vh;
-	}
-
 	#myContacts {
 		height: 100vh;
 	}
@@ -580,10 +575,6 @@ footer > div > p {
 
 	header > .btnn {
 		top: 20px;
-	}
-
-	#myPortfolio {
-		height: 400vh;
 	}
 
 }
