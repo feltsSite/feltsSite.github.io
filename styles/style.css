@@ -363,15 +363,17 @@ div.about > div.leftDiv {
 	position: relative;
 	display: inline-block;
 	width: 30%;
-	height: 550px;
+	min-height: 550px;
+	height: auto;
+	padding: 4% 3%;
 	background-color: #555;
 	margin: 50px 5%;
 	margin-left: calc(15% - 5px);
+	overflow: hidden;
 }
 
-div.about > div.leftDiv > p {
-	position: absolute;
-	padding: 25px 35px;
+div.about > div.leftDiv > span,
+div.about > div.rightDiv > span {
 	text-align: center;
 	color: #e2e2e2;
 }
@@ -380,10 +382,13 @@ div.about > div.rightDiv {
 	position: relative;
 	display: inline-block;
 	width: 30%;
-	height: 550px;
+	min-height: 550px;
+	height: auto;
+	padding: 4% 3%;
 	background-color: #555;
 	margin: 50px 5%;
 	margin-right: calc(15% - 5px);
+	overflow: hidden;
 }
 
 div.about > hr.vHr {
@@ -549,6 +554,18 @@ footer > div > p {
 
 	div.about {
 		top: 100vh;
+	}
+
+	div.about > div.leftDiv, div.about > div.rightDiv {
+		display: block;
+		width: 80%;
+		padding: 3% 5%;
+		left: 10%;
+		margin: 50px 0;
+	}
+
+	div.about> hr.vHr {
+		display: none;
 	}
 
 	div.portfolio {
