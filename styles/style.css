@@ -104,7 +104,6 @@ div#hd {
 	padding: 0;
 	left: 0;
 	right: 0;
-	height: 440vh;
 	top: 200px;
 	bottom: 270px;
 	background-color: rgba(0,0,0,0.25);
@@ -298,8 +297,8 @@ header > h2 {
 header > p {
 	position: relative;
 	text-align: center;
-	margin: 70px 0;
 	font-size: 20px;
+	margin: 70px 0;
 	color: #eee;
 }
 
@@ -335,58 +334,65 @@ div#about {
 	position: relative;
 	top: 0;
 	width: 100%;
-	height: 100vh;
-	background-color: #444;
+	background-color: #e3e4e6;
 }
 
 div.about {
 	position: absolute;
 	top: calc(100vh - 200px);
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
+	height: auto;
 }
 
 div.about > h1 {
 	position: relative;
 	text-align:center;
 	margin: 10% 0 40px 0;
-	color: #e2e2e2;
+	color: #2e2e2e;
 }
 
 div.about > hr {
 	position: relative;
 	width: 40%;
 	margin: 0 auto;
-	border-top: 1px solid #fb9f4a;
+	border-top: 3px solid #fb9f4a;
 }
 
 div.about > div.leftDiv {
 	position: relative;
 	display: inline-block;
 	width: 30%;
-	height: 60%;
+	height: 550px;
 	background-color: #555;
 	margin: 50px 5%;
-	margin-left: calc(15% - 4.5px);
+	margin-left: calc(15% - 5px);
+}
+
+div.about > div.leftDiv > p {
+	position: absolute;
+	padding: 25px 35px;
+	text-align: center;
+	color: #e2e2e2;
 }
 
 div.about > div.rightDiv {
 	position: relative;
 	display: inline-block;
 	width: 30%;
-	height: 60%;
+	height: 550px;
 	background-color: #555;
 	margin: 50px 5%;
-	margin-right: calc(15% - 4.5px);
+	margin-right: calc(15% - 5px);
 }
 
 div.about > hr.vHr {
 	position: relative;
 	display: inline-block;
 	border: none;
-	border-left: 1px solid #fb9f4a;
+	border-left: 2px solid #fb9f4a;
 	width: 0;
-	height: 60%;
+	height: 550px;
 	margin: 50px auto;
 }
 
@@ -395,14 +401,14 @@ div.about > hr.vHr {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #ddd;
+	background-color: #444;
 }
 
 .portfolio {
 	position: absolute;
 	top: calc(200vh - 200px);
 	width: 100%;
-	min-height: 100vh;
+	min-height: 50vh;
 	height: auto;
 }
 
@@ -410,7 +416,7 @@ div.about > hr.vHr {
 	text-align: center;
 	margin-top: 10%;
 	font-weight: bold;
-	color: #58595a;
+	color: #e2e2e2;
 }
 
 .tz-gallery {
@@ -419,13 +425,13 @@ div.about > hr.vHr {
 }
 
 .tz-gallery .thumbnail {
-    padding: 0;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 4px;
-    border: none;
-    transition: 0.15s ease-in-out;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+	padding: 0;
+	margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: none;
+	transition: 0.15s ease-in-out;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
 
 .tz-gallery .thumbnail:hover {
@@ -454,7 +460,7 @@ div.about > hr.vHr {
 }
 
 .baguetteBox-button {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 #myContacts {
@@ -514,6 +520,10 @@ footer > div > p {
 
 	.navi > ul {
 		top: 50px;
+	}
+
+	header {
+		height: 100vh;
 	}
 
 	header > h1.logo {

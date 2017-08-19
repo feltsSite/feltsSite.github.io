@@ -1,12 +1,18 @@
 $(window).on('load', function() {
+	$('.portfolio').css("top", $('header').height() + $('.about').height() + "px");
 	let pHeight = $(".portfolio").height();
-	$("#myPortfolio").css("height", pHeight + 100 + "px");
+	let aHeight = $(".about").height();
+	$("#about").height(aHeight);
+	$("#myPortfolio").height(pHeight + 100);
 	$('.preloader').delay(1000).fadeOut('slow');;
 });
 
 $(window).on('resize', function() {
+	$('.portfolio').css("top", $('header').height() + $('.about').height() + "px");
 	let pHeight = $(".portfolio").height();
-	$("#myPortfolio").css("height", pHeight + 100 + "px");
+	let aHeight = $(".about").height();
+	$("#myPortfolio").height(pHeight + 100);
+	$("#about").height(aHeight);
 });
 
 $(function() {
