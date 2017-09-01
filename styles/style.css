@@ -79,9 +79,7 @@ a:hover {
 	bottom: 0;
 	height: 100vh;
 	overflow-x: hidden;
-	background: url('../images/2.jpg') no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url('../images/bgi.jpg') repeat;
 	background-position: 50% 50%;
 }
 
@@ -96,6 +94,7 @@ div#hd {
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	background-color: rgba(0, 0, 0, .85);
 }
 
 .wrapper > .container {
@@ -244,7 +243,7 @@ div#hd {
 	height: 100%;
 	transition: all .6s;
 	cursor: pointer;
-}
+}#FB804A
 
 .navi > ul > li > a:hover {
 	color: #fb9f4a !important;
@@ -268,14 +267,57 @@ header {
 header > h1.logo{
 	position: absolute;
 	right: 20px;
-	top: -195px;
+	top: -175px;
 	font-size: 96px;
 	font-family: "Indie Flower", cursive;
 	text-align: right;
+	animation: neon .13s ease-in-out infinite alternate;
 }
 
 header > h1 > a > span {
-	color: #fb9f4a;
+	animation: neon1 .13s ease-in-out infinite alternate !important;
+}
+
+@keyframes neon {
+	from {
+		text-shadow:
+		0 0 6px rgba(202,228,225,0.92),
+		0 0 30px rgba(202,228,225,0.34),
+		0 0 12px rgba(30,132,242,0.52),
+		0 0 21px rgba(30,132,242,0.92),
+		0 0 34px rgba(30,132,242,0.78),
+		0 0 54px rgba(30,132,242,0.92);
+	}
+	to {
+		text-shadow:
+		0 0 6px rgba(202,228,225,0.98),
+		0 0 30px rgba(202,228,225,0.42),
+		0 0 12px rgba(30,132,242,0.58),
+		0 0 22px rgba(30,132,242,0.84),
+		0 0 38px rgba(30,132,242,0.88),
+		0 0 60px rgba(30,132,242,1);
+	}
+}
+
+@keyframes neon1 {
+	from {
+		text-shadow:
+		0 0 6px rgba(202,228,225,0.92),
+		0 0 30px rgba(251,132,74,0.34),
+		0 0 12px rgba(250,250,255,0.82),
+		0 0 21px rgba(251,132,74,0.92),
+		0 0 34px rgba(251,132,74,0.78),
+		0 0 54px rgba(251,132,74,0.92);
+	}
+	to {
+		text-shadow:
+		0 0 6px rgba(202,228,225,0.98),
+		0 0 30px rgba(251,132,74,0.42),
+		0 0 12px rgba(250,250,255,0.92),
+		0 0 22px rgba(251,132,74,0.84),
+		0 0 38px rgba(251,132,74,0.88),
+		0 0 60px rgba(251,132,74,1);
+	}
 }
 
 header > h2 {
@@ -310,15 +352,19 @@ header > p > span {
 .btnn {
 	position: relative;
 	display: block;
-	margin: 0 0;
 	width: 200px;
 	height: 40px;
+	margin: 0 auto;
 	top: 30px;
-	background-color: #fb9f4a;
-	left: calc(50% - 100px);
+	background-color: #00ACCD;
+	box-shadow:
+		0 0 6px rgba(202,228,225,0.92),
+		0 0 30px rgba(202,228,225,0.34),
+		0 0 12px rgba(30,132,242,0.52),
+		0 0 21px rgba(30,132,242,0.92);
 }
 
-header > .btnn > a {
+.btnn > a {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -363,10 +409,9 @@ div.about > div.leftDiv {
 	position: relative;
 	display: inline-block;
 	width: 30%;
-	min-height: 550px;
-	height: auto;
+	height: 320px;
 	padding: 4% 3%;
-	background-color: #555;
+	background-color: #444;
 	margin: 50px 5%;
 	margin-left: calc(15% - 5px);
 	overflow: hidden;
@@ -374,7 +419,7 @@ div.about > div.leftDiv {
 
 div.about > div.leftDiv > span,
 div.about > div.rightDiv > span {
-	text-align: center;
+	text-align: left;
 	color: #e2e2e2;
 }
 
@@ -382,10 +427,12 @@ div.about > div.rightDiv {
 	position: relative;
 	display: inline-block;
 	width: 30%;
-	min-height: 550px;
-	height: auto;
+	height: 320px;
 	padding: 4% 3%;
-	background-color: #555;
+	background: url("../images/webProg.png") no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: 120%;
+	background-size: 120%;
 	margin: 50px 5%;
 	margin-right: calc(15% - 5px);
 	overflow: hidden;
@@ -395,10 +442,20 @@ div.about > hr.vHr {
 	position: relative;
 	display: inline-block;
 	border: none;
-	border-left: 2px solid #fb9f4a;
+	border-left: 2px solid #00ACCD;
 	width: 0;
-	height: 550px;
+	height: 320px;
 	margin: 50px auto;
+}
+
+div.about > div.btnn {
+	background-color: #FB984A;
+	margin-top: 40px;
+	box-shadow:
+		0 0 6px rgba(202,228,225,0.62),
+		0 0 30px rgba(251,122,74,1),
+		0 0 12px rgba(250,250,255,0.52),
+		0 0 21px rgba(251,122,74,1);
 }
 
 #myPortfolio {
@@ -411,7 +468,6 @@ div.about > hr.vHr {
 
 .portfolio {
 	position: absolute;
-	top: calc(200vh - 200px);
 	width: 100%;
 	min-height: 50vh;
 	height: auto;
@@ -556,16 +612,25 @@ footer > div > p {
 		top: 100vh;
 	}
 
-	div.about > div.leftDiv, div.about > div.rightDiv {
+	div.about > div.leftDiv {
 		display: block;
 		width: 80%;
-		padding: 3% 5%;
+		padding: 6% 6%;
 		left: 10%;
 		margin: 50px 0;
+		height: 250px;
 	}
 
-	div.about> hr.vHr {
+	div.about > div.rightDiv {
 		display: none;
+	}
+
+	div.about > hr.vHr {
+		display: none;
+	}
+
+	div.about > .btnn {
+		margin-top: -20px !important;
 	}
 
 	div.portfolio {
@@ -584,7 +649,7 @@ footer > div > p {
 	}
 
 	header > h1.logo {
-		font-size: 36px;
+		font-size: 46px;
 		top: 7px;
 		right: 10px;
 	}
@@ -600,8 +665,14 @@ footer > div > p {
 		font-size: 16px;
 	}
 
-	header > .btnn {
-		top: 20px;
+	.btnn {
+		width: 150px;
+		height: 30px;
+	}
+
+	.btnn > a {
+		line-height: 220%;
+		font-size: 14px;
 	}
 
 }
