@@ -1,16 +1,22 @@
+var cHeight;
+
 $(window).on('load', function() {
 	let pHeight = $(".portfolio").height();
 	let aHeight = $(".about").height();
-	$("#about").height(aHeight);
-	$("#myPortfolio").height(pHeight + 100);
-	$('.preloader').delay(500).fadeOut('slow');;
+	$(".about").height(aHeight + 80);
+	$("#about").height($(".about").height());
+	$("#myPortfolio").height(pHeight);
+	$(".preloader").delay(500).fadeOut('slow');
+	cHeight = $(".container").height() - $("header").height() - $(".portfolio").height() - $(".about").height() - 200;
+	$(".contacts").height(cHeight)
 });
 
 $(window).on('resize', function() {
 	let pHeight = $(".portfolio").height();
 	let aHeight = $(".about").height();
-	$("#myPortfolio").height(pHeight + 100);
-	$("#about").height(aHeight);
+	$(".about").height(aHeight);
+	$("#myPortfolio").height(pHeight);
+	$("#about").height($(".about").height());
 });
 
 $(function() {
