@@ -1,23 +1,18 @@
-var cHeight;
-
-$(window).on('load', function() {
+function sizing() {
 	let pHeight = $(".portfolio").height();
 	let aHeight = $(".about").height();
-	$(".about").height(aHeight + 80);
-	$("#about").height($(".about").height());
+	let cHeight;
 	$("#myPortfolio").height(pHeight);
-	$(".preloader").delay(500).fadeOut('slow');
-	cHeight = $(".container").height() - $("header").height() - $(".portfolio").height() - $(".about").height() - 200;
-	$(".contacts").height(cHeight)
-});
+	$("#about").height(aHeight);
+	cHeight = $(".container").height() - $("header").height() - pHeight - aHeight - parseInt($("#head2").css('margin-top'));
+	$(".contacts").height(cHeight);
+	if ($(".preloader").css("display") != 'none') {
+		$(".preloader").delay(500).fadeOut('slow');
+	}
+}
 
-$(window).on('resize', function() {
-	let pHeight = $(".portfolio").height();
-	let aHeight = $(".about").height();
-	$(".about").height(aHeight);
-	$("#myPortfolio").height(pHeight);
-	$("#about").height($(".about").height());
-});
+$(window).on('load', sizing);
+$(window).on('resize', sizing)
 
 $(function() {
 		var mMnu = true;

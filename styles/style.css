@@ -145,6 +145,11 @@ div#hd > h1 > a > span {
 	border: none;
 	background-color: #222;
 	z-index: 1000;
+	opacity: 0.6;
+}
+
+.toggle_mnu:hover {
+	opacity: 1;
 }
 
 .toggle_mnu span {
@@ -358,7 +363,7 @@ div.about {
 	position: relative;
 	top: 0;
 	width: 100%;
-	min-height: 85vh;
+	min-height: 95vh;
 	height: auto;
 }
 
@@ -423,6 +428,7 @@ div.about > hr.vHr {
 div.about > div.btnn {
 	background-color: #FB984A;
 	top: 40px;
+	margin: 0 auto;
 	box-shadow:
 		0 0 30px rgba(251,122,74,0.52),
 		0 0 12px rgba(250,250,255,0.22),
@@ -447,7 +453,7 @@ div.about > div.btnn {
 
 .portfolio > h1 {
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 15%;
 	margin: 0;
 	font-weight: bold;
 	color: #e2e2e2;
@@ -528,6 +534,8 @@ div.about > div.btnn {
 	font-family: "Indie Flower";
 	padding: 80px;
 	font-size: 64px;
+	color: #666;
+	text-shadow: 2px 2px 1px #000;
 }
 
 .contacts > span {
@@ -535,6 +543,7 @@ div.about > div.btnn {
 	position: absolute;
 	width: 100%;
 	text-align: right;
+	font-family: "Indie Flower";
 	font-size: 24px;
 	padding-right: 120px;
 	bottom: 50px;
@@ -576,9 +585,8 @@ footer > div > p {
 
 	.wrapper > .container {
 		width: 100%;
-		height: 200vh;
 		top: 0;
-		bottom: 0;
+		bottom: 70px;
 		left: 0;
 		right: 0;
 		margin: 0;
